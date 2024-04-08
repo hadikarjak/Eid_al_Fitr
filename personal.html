@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة سيرياتك | تهنئة عيد الفطر شخصية</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="layout/images/icon.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css">
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="layout/css/bootstrap-rtl.css">
+    <!--  Custom css  -->
+    <link rel="stylesheet" href="layout/css/main.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--    Start navbar    -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a href="eid.html" class="navbar-brand"><img src="layout/images/logo.png" width="140px" alt=""></a>
+            <button class="navbar-toggler" data-toggle="collapse" style="border:0;" data-target="#menu">
+                <i style="color:#1f0f41;font-size: 30px;" class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto" style="text-align: center;">
+                    <li class="nav-item">
+                        <a href="eid.html" class="nav-link" style="color:#1f0f41;">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#category" class="nav-link" style="color:#1f0f41;">الأقسام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://solo.to/syriatech" target="_blank" class="nav-link"
+                            style="color:#1f0f41;">تواصل معنا</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--    End navbar    -->
+    <!-- start personal-->
+    <style>
+        input[type="search"]::-webkit-search-decoration {
+            display: none;
+        }
+    </style>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="banar-personal">
+                    <h4 class="text-center my-3">ادخل معلومات التهنئة الشخصية 🎉</h4>
+                    <div class="pp text-center my-3">قم بتهنئة أقاربك وأحبابك والأصدقاء بصورة ملفتة وادخل على قلوبهم حب العائلة وكلمات طيبة ومعبرة</div>
+                    <hr class="mt-1 mb-4 mx-4 v-divider theme--light">
+
+                  
+                    <script>
+                        function submitForm() {
+                          var name = document.getElementById("name").value;
+                          var selection = document.getElementById("selection").value;
+                    
+                          // تحديد صفحة الوجهة
+                          var destination = "info-personal.html";
+                    
+                          // إضافة البيانات المرسلة إلى عنوان الصفحة
+                          destination += "?name=" + encodeURIComponent(name) + "&selection=" + encodeURIComponent(selection);
+                    
+                          // إعادة توجيه المستخدم إلى الصفحة الثانية
+                          window.location.href = destination;
+                        }
+                      </script>
+
+
+                    <form action="">
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <input type="text" name="name" id="name" class="input-elem" placeholder="ادخل اسمك ليظهر على التهنئة" autocomplete="off" required />
+                                    <label for="name">الاسم</label>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <select class="sel" id="selection" name="selection" required>
+                                        <option value="">اختر نص التهنئة</option>
+                                        <option value="عيد فطر مبارك، أتمنى لك ولعائلتك أيامًا مليئة بالسعادة والبركة. اللهم تقبل منا الصيام والقيام واجعلنا من المقبولين.">تهنئة 1</option>
+                                        <option value="تهانينا بمناسبة عيد الفطر المبارك، أعاده الله عليكم بالخير والمغفرة. اللهم تقبل منا وأعنا على الاستمرار في العبادات بعد الشهر الكريم.">تهنئة 2</option>
+                                        <option value="بمناسبة عيد الفطر، أدعو الله أن يعيده عليك بالصحة والسعادة وأن يتقبل منا ومنكم صالح الأعمال. اللهم اجعلنا من العتقاء من النار في هذا العيد.">تهنئة 3</option>
+                                        <option value="عيد فطر سعيد! أتمنى لك أيامًا مليئة بالفرح والسلام. اللهم اجعل هذا العيد بداية لعام مليء بالنجاح والتوفيق.">تهنئة 4</option>
+                                        <option value="كل عام وأنت بخير في عيد الفطر! أدعو الله أن يغفر لك ذنوبك ويبارك لك في حياتك. اللهم تقبل منا وأعنا على الاستمرار في طاعتك.">تهنئة 5</option>
+                                        <option value="بمناسبة عيد الفطر المبارك، أدعو الله أن يمنحك قوة وصحة وسعادة. اللهم اجعل هذا العيد فرصة لنتقرب إليك أكثر ونزيد في العمل الصالح.">تهنئة 6</option>
+                                        <option value="عيد فطر سعيد وكل عام وأنت بألف خير! أدعو الله أن يجعل أيامك مليئة بالأمان والسعادة وأن يمنحك النجاح في كل مجالات حياتك.">تهنئة 7</option>
+                                        <option value="تقبل الله طاعاتك وأعمالك في عيد الفطر المبارك. اللهم اجعل هذا العيد بداية لحياة جديدة مليئة بالهداية والبركة.">تهنئة 8</option>
+                                        <option value="عيد فطر مبارك لك ولعائلتك الكريمة، أدعو الله أن يجعله عيدًا مليئًا بالسعادة والمحبة. اللهم ارزقنا العفو والعافية في هذا العيد.">تهنئة 9</option>
+                                        <option value="بمناسبة عيد الفطر المبارك، أدعو الله أن يمنحك فرحة لا توصف وأن يرفع عنك الهم والغم. اللهم اجعل هذا العيد بداية للتغيير والتحسن في حياتنا.">تهنئة 10</option>
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 justify-content-center">
+                                <input class="btn-register" type="button" value="ارسال" onclick="submitForm()">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end personal-->
+    <!-- start category-->
+    <div class="section-title">
+        <h2>الخدمات التي تقدمها المنصة</h2>
+
+        <div class="category" id="category">
+            <div class="row">
+               
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/web.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">تصميم المواقع</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/art.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">التصميم والطباعة</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/motion.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">المونتاج</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/camera.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">التصوير</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/translate.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">الترجمة</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/data-science.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">تحليل البيانات</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/analysis.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">التقارير التفاعلية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end category-->
+   
+
+    <footer class="text-center">
+        <img src="layout/images/logo.png" alt="" class="footer-img">
+        <p>جميع الحقوق محفوظة &copy; 2022</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="header3">
+
+                        <h5>
+                            <a href="https://api.whatsapp.com/send?phone=963945881302" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="https://www.facebook.com/sytechnology1/" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="https://instagram.com/sytechnology1" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="http://t.me/sytechnology1" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="https://twitter.com/sytechnology1" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+            <p class="program">برمجة وتصميم<a href="https://www.facebook.com/hadikarjak" target="_blank"> هادي نادر
+                    كرجك </a></p>
+
+    </footer>
+
+
+    <!-- Start Footer -->
+
+    <!-- End Footer -->
+    <!-- End banar -->
+    <div id="preloader"></div>
+    <a href="#main" class="back-to-top d-flex align-items-center justify-content-center "> <i
+            class="fas fa-arrow-up "></i></a>
+</body>
+<!-- MAIN JS -->
+<script src="layout/js/main.js "></script>
+<!--font awesom-->
+<script src="fontawesome-free-5.10.2-web/js/all.js "></script>
+<!-- End Footer -->
+<script src="fontawesome-free-5.10.2-web/js/all.js "></script>
+<!-- jQuery -->
+<script src="layout/js/jquery-3.4.1.min.js "></script>
+<!-- Bootstrap js -->
+<script src="layout/js/bootstrap.min.js "></script>
+</body>
+
+</html>

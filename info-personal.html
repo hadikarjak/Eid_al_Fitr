@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة سيرياتك | تهنئة عيد الفطر شخصية</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="layout/images/icon.png">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="layout/css/bootstrap.min.css">
+    <!-- Bootstrap RTL -->
+    <link rel="stylesheet" href="layout/css/bootstrap-rtl.css">
+    <!--  Custom css  -->
+    <link rel="stylesheet" href="layout/css/main.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;800&display=swap" rel="stylesheet">
+    <!--Download Image-->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+    <!--    Start navbar    -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container">
+            <a href="eid.html" class="navbar-brand"><img src="layout/images/logo.png" width="140px" alt=""></a>
+            <button class="navbar-toggler" data-toggle="collapse" style="border:0;" data-target="#menu">
+                <i style="color:#1f0f41;font-size: 30px;" class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ml-auto" style="text-align: center;">
+                    <li class="nav-item">
+                        <a href="eid.html" class="nav-link" style="color:#1f0f41;">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#category" class="nav-link" style="color:#1f0f41;">الأقسام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://solo.to/syriatech" target="_blank" class="nav-link"
+                            style="color:#1f0f41;">تواصل معنا</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--    End navbar    -->
+    <!-- start personal design-->
+    <style>
+          input[type="search"]::-webkit-search-decoration {
+            display: none;
+        }
+        .personal-eid {
+            margin-top: 30px;
+          position: relative;
+          display: inline-block;
+          width: 350px;
+          height: 476px;
+        }
+    
+        .personal-eid    .image {
+          display: block;
+          width: 350px;
+          height: 476px;
+        }
+    
+        .personal-eid .text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #fefefe;
+          font-size: 13px;
+          padding: 3px;
+         border-bottom:2px solid #da3a5e;
+          font-weight: bold;
+          
+          text-align: center;
+       
+        }
+        .personal-eid    .text2 {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -25%);
+          color: white;
+          font-size: 15px;
+          
+          text-align: center;
+       
+        }
+      </style>
+        <script>
+            window.onload = function() {
+              // استخراج البيانات من عنوان الصفحة
+              var params = new URLSearchParams(window.location.search);
+              var name = params.get('name');
+              var selection = params.get('selection');
+        
+              // عرض البيانات في الصفحة
+              document.getElementById("name").textContent = name;
+              document.getElementById("selection").textContent = selection;
+            };
+      
+            function convertAndDownload() {
+            var element = document.getElementById('myElement');
+
+            html2canvas(element).then(function(canvas) {
+                var image = canvas.toDataURL('image/png');
+
+                var link = document.createElement('a');
+                link.href = image;
+                link.download = 'myImage.png';
+                link.click();
+                 // Show the download message
+                 showDownloadMessage();
+            });
+        }
+        function showDownloadMessage() {
+            var messageElement = document.getElementById("download-message");
+
+            // Display the message
+            messageElement.style.display = "block";
+
+            // Hide the message after 3 seconds
+            setTimeout(function() {
+                messageElement.style.display = "none";
+            }, 16000);
+        }
+    </script>
+    </script>
+          </script>
+         <center>
+            <div id="download-message" style="background:#da3a5e;display: none;border-radius: 5px;padding: 5px;margin-top: 20px;width:300px;color:#fefefe;">تم تنزيل الصورة بنجاح!</div>
+    <div class="personal-eid" id ="myElement">
+        <img class="image" src="layout/images/personal-design.png" alt="صورة">
+        <div class="text" id="name"></div>
+        <div class="text2" id="selection"></div>
+      </div>
+         </center>
+         <br>
+         <center>
+            <button class="btn-company" style=" border:0;background-color: #da3a5e;padding: 10px;color:#fff;border-radius: 5px;" onclick="convertAndDownload()">تنزيل الصورة</button>
+
+      </center>
+    <!-- end personal design-->
+    <!-- start category-->
+    <div class="section-title">
+        <h2>الخدمات التي تقدمها المنصة</h2>
+
+        <div class="category" id="category">
+            <div class="row">
+               
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/web.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">تصميم المواقع</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/art.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">التصميم والطباعة</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/motion.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">المونتاج</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/camera.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">التصوير</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/translate.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">الترجمة</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/data-science.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">تحليل البيانات</a>
+                </div>
+                <div class="box">
+                    <a class="a-image" href="https://solo.to/syriatech"><img src="layout/images/analysis.png" alt="الصوة غير متوفرة"></a>
+                    <hr width="50%">
+                    <a class="a-link" href="#">التقارير التفاعلية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end category-->
+   
+
+    <footer class="text-center">
+        <img src="layout/images/logo.png" alt="" class="footer-img">
+        <p>جميع الحقوق محفوظة &copy; 2022</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="header3">
+
+                        <h5>
+                            <a href="https://api.whatsapp.com/send?phone=963945881302" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="https://www.facebook.com/sytechnology1/" target="_blank">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="https://instagram.com/sytechnology1" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="http://t.me/sytechnology1" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </h5>
+
+                        <h5>
+                            <a href="https://twitter.com/sytechnology1" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+            <p class="program">برمجة وتصميم<a href="https://www.facebook.com/hadikarjak" target="_blank"> هادي نادر
+                    كرجك </a></p>
+
+    </footer>
+
+
+    <!-- Start Footer -->
+
+    <!-- End Footer -->
+    <!-- End banar -->
+    <div id="preloader"></div>
+    <a href="#main" class="back-to-top d-flex align-items-center justify-content-center "> <i
+            class="fas fa-arrow-up "></i></a>
+</body>
+<!-- MAIN JS -->
+<script src="layout/js/main.js "></script>
+<!--font awesom-->
+<script src="fontawesome-free-5.10.2-web/js/all.js "></script>
+<!-- End Footer -->
+<script src="fontawesome-free-5.10.2-web/js/all.js "></script>
+<!-- jQuery -->
+<script src="layout/js/jquery-3.4.1.min.js "></script>
+<!-- Bootstrap js -->
+<script src="layout/js/bootstrap.min.js "></script>
+</body>
+
+</html>
